@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://localhost:8080/OAUTHCOOP/registration.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- < name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="./Registration_files/dynamic1.css">
+    <link rel="stylesheet" href="./Registration_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Registration</title>     
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li><a href="http://localhost:8080/OAUTHCOOP/index.php">home</a></li>
+            <li><a href="http://localhost:8080/OAUTHCOOP/registration.php">Register</a></li>
+        </ul>
+    </div>
+<div class="container bg-primary"><form action="http://localhost:8080/OAUTHCOOP/registration.php" method="post" class="container">
+    <div class="row"><h1>membership enrolment form</h1> </div>
+    <label class="icon" for="first_name">First name: </label>
+    <input type="text" name="first_name" width="200" required="" value="">
+    <br>
+    <label class="icon" for="midlle_name">Middle name: </label>
+    <input type="text" name="middle_name" width="200" required="">
+    <br>
+    <label class="icon" for="last_name">Last name: </label>
+    <input type="text" name="last_name" width="200" required="">
+    <br>
+    <label class="icon" for="department">department: </label>
+    <input type="text" name="department" width="200" required="">
+    <br>
+    <label class="icon" for="religion">religion: </label>
+    <select name="religion" id="drop_down">
+        <option value="1">Christian</option>
+        <option value="2">Muslim</option>
+        <option value="3">Others</option>
+    </select>
+    <br>
+    <label for="other_r">IF others, name?</label>
+    <input type="text" name="other_r">
+    <br>
+    <label class="icon" for="denomination">Denomination: </label>
+    <input type="text" name="denomination" width="200" required="">
+    <br>
+    <label class="icon" for="residential_address">Residential address: </label>
+    <input type="text" name="residential_address" width="200" required="">
+    <br>
+    <label class="icon" for="P_Home_address">Permanent Home address: </label>
+    <input type="text" name="P_Home_saddress" width="200" required="">
+    <br>
+    <label class="icon" for="personal_file_number">OAUTHC Personal File Number: </label>
+    <input type="text" name="personal_file_number" width="200" required="">
+    <br>
+    <label class="icon" for="old_member">Have you ever joined this society <b>?</b>  </label>
+    <label for="old_member">Yes</label>
+    <input type="radio" name="old_member" value="True">
+    <label for="old_member">No</label>
+    <input type="radio" name="old_member" value="False">
+    <br>
+    <label class="icon" for="membership_no">If yes what was your membership no: </label>
+    <input type="text" name="membership_no">
+    <br>
+    <label for="Next_of_kin"><b>Next Of Kin</b></label>
+    <br>
+    <div class="row">
+        <div class="col">
+            <label class="icon" for="N1_first_name">First name: </label>
+            <input type="text" name="N1_first_name" width="200">
+            <label class="icon" for="N1_last_name">Last name: </label>
+            <input type="text" name="N1_last_name" width="200">
+            <br>
+            <label for="N1_relationship">Relationship:</label>
+            <input type="text" name="N1_relationship">
+            <br>
+            <label for="N1_address">Contact Address</label>
+            <input type="text" name="N1_adress">
+        </div>
+        <div class="col">
+            <label class="icon" for="N2_first_name">First name: </label>
+            <input type="text" name="N2_first_name" width="200">
+            <label class="icon" for="N2_last_name">Last name: </label>
+            <input type="text" name="N2_last_name" width="200">
+            <br>
+            <label for="N2_relationship">Relationship:</label>
+            <input type="text" name="N2_relationship">
+            <br>
+            <label for="N2_address">Contact Address</label>
+            <input type="text" name="N2_adress">
+        </div>
+    </div> 
+    <div class="row">
+        <label><b> SPONSOR(S) RECOMMENATION</b></label>
+        <br>
+        <div class="col-5">
+            <label for="sp1_name">Sponsor's Name</label>
+            <input type="text" name="sp1_name">
+            <br>
+            <label class="icon" for="sp1_denomination">Denomination: </label>
+            <input type="text" name="sp1_denomination" width="200">
+            <br>
+            <label class="icon" for="sp1_personal_file_number">OAUTHC Personal File Number: </label>
+            <input type="text" name="sp1_personal_file_number" width="200">
+            <label for="sp1_Coop_No">Coop Personal Ledger No</label> 
+            <input type="text" name="sp1_Coop_No">          
+        </div>
+        <div class="col-5 bg">
+            <label for="sp2_name">Sponsor's Name</label>
+            <input type="text" name="sp2_name">
+            <br>
+            <label class="icon" for="sp2_denomination">Denomination: </label>
+            <input type="text" name="sp2_denomination" width="200">
+            <br>
+            <label class="icon" for="sp2_personal_file_number">OAUTHC Personal File Number: </label>
+            <input type="text" name="sp2_personal_file_number" width="200">
+            <label for="sp2_Coop_No">Coop Personal Ledger No</label> 
+            <input type="text" name="sp2_Coop_No">   
+        </div>
+    </div>
+    <input type="submit" name="Submitted" value="register">
+    <input type="hidden" name="Submitted" value="TRUE">
+    <br>
+</form>
+
+</div><div id="footer">
+        <p>copyright © 2019 </p>
+</div>
+
+</body></html>
